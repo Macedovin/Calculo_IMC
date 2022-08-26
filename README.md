@@ -26,7 +26,7 @@ Visando <strong>ME DESAFIAR</strong>:
 
        <summary>Imagem e projeto aqui</summary>
        <br/>
-       <a href="https://www.figma.com/file/xNpcDC3rDgTNRURre2IhpO/IMC---C%C3%A1lculo?node-id=123%3A100" target="_blank"><img src="" width=450px/></a>
+       <a href="https://www.figma.com/file/xNpcDC3rDgTNRURre2IhpO/IMC---C%C3%A1lculo?node-id=123%3A100" target="_blank"><img src="https://github.com/VMPILUSTRA/Calculo_IMC/blob/main/FIGMA-final.png" width=450px/></a>
 
      </details>
 
