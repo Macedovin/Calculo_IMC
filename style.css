@@ -9,7 +9,7 @@
 :root {
   font-size: 62.5%;
 
-  /* VAROIÁVEIS DE COR */
+  /* VARIÁVEIS DE COR */
 
   --tt-heading: hsl(194, 68%, 15%);
 
@@ -19,6 +19,12 @@
   --ot-input: hsl(194, 97%, 31%);
   --bd-input: hsla(210, 9%, 31%, 0.302);
   --tt-placeholder: hsla(210, 9%, 31%, 0.5);
+  
+  /* VARIÁVEIS DE COR PARA OS NOVOS ELEMENTOS */
+  
+  --bg-modal-congrats: hsl(144, 97%, 31%);
+  --bg-modal-worry: hsl(69, 97%, 31%);
+  --bg-modal-danger: hsl(14, 97%, 31%);
 
   --tt--button: hsl(0, 0%, 100%);
   --bg-button: hsl(194, 97%, 31%);
@@ -46,7 +52,7 @@ button {
   height: 100vh;
   place-content: center;
 
-  padding: 1.6rem;
+  padding: 1.9rem;
 }
 
 .card {
@@ -54,11 +60,9 @@ button {
   box-shadow: 0 0.2rem 0.4rem hsla(0, 0%, 0%, 0.1);
   border-radius: 0.6rem;
 
-  padding: 4.8rem 6.4rem 6.4rem;
+  padding: 4.8rem 2.9rem 6.4rem;
 
   margin-inline: auto;
-
-  max-width: 42.8rem;
 }
 
 .title {
@@ -69,7 +73,7 @@ button {
 }
 
 form {
-  width: 30rem;
+  max-width: clamp(22.4rem, 25rem + 26vw, 30rem);
 }
 
 form h1 {
@@ -141,6 +145,8 @@ form button:hover {
   background-color: var(--bg-button-hover);
 }
 
+/* ADCICONANDO O  NOVO ELEMENTO*/
+
 /* modal/ pop-up */
 
 .modal-wrapper.open {
@@ -174,6 +180,63 @@ form button:hover {
 
 .modal {
   position: relative;
+}
+
+.modal.card,
+.modal.inform {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.card {
+  gap: 4.5rem;
+
+  min-width: clamp(31rem, 22rem + 29vw, 49.3rem);
+
+  padding: 4.8rem 1.5rem 2.2rem;
+}
+
+.modal.inform {
+  gap: 1.6rem;
+
+  width: 100%;
+
+  padding: 2.4rem 2.8rem 3.8rem;
+
+  border-radius: 0.6rem;
+}
+
+.modal.inform h3,
+.modal.inform .text {
+  line-height: 4rem;
+}
+
+.modal.inform h3 {
+  color: var(--tt--button);
+  font-size: 2.6rem;
+
+  text-transform: uppercase;
+}
+
+.modal.inform .text {
+  color: var(--tt-heading);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.modal.inform.congrats {
+  background-color: var(--bg-modal-congrats);
+}
+
+.modal.inform.worry {
+  background-color: var(--bg-modal-worry);
+}
+
+.modal.inform.danger {
+  background-color: var(--bg-modal-danger);
 }
 
 .modal button {
@@ -227,4 +290,32 @@ form button:hover {
   opacity: 0;
 
   transform: translateY(-30px);
+}
+
+/*--------------- MEDIA QUERIES -----------*/
+
+@media (min-width: 768px) {
+  .card {
+    padding: 4.8rem 6.4rem 6.4rem;
+  }
+
+  /* modal/ pop-up */
+
+  .modal.card {
+    padding: 4.8rem 6.5rem 2.2rem;
+  }
+
+  .modal.inform {
+    min-width: 36.3rem;
+
+    padding: 4.8rem 2.8rem 6.4rem;
+  }
+
+  .modal.inform h3 {
+    font-size: 3.2rem;
+  }
+
+  .modal.inform .text {
+    font-size: 2.2rem;
+  }
 }
