@@ -10,16 +10,22 @@ Entender e elaborar adequadamente o que foi <strong>majestrosamente</strong> pla
 
 Visando <strong>ME DESAFIAR</strong>:
 
-- Decidi acrescentar alguns detalhes a mais no projeto:
+Decidi acrescentar alguns detalhes a mais no projeto:
 
   1. Decidi fazê-los em separado para melhor diferenciação do que foi feito depois e o que tinha inicialmente;
 
-     Adicionando variáveis de captação a elementos relacionadas a alertas ao usuário, refatorando parte do código e adicionando os alertas que são:
+      Aceitando e desenvolvendo o <strong>desafio</strong> do querido instrutor <strong>@maykbrito</strong>:
 
-     - Se não houver número inserido;
+        - Deixei a aplicação <strong>RESPONSIVA</strong>;
+     
+     Adicionei nova caixa de alertas relacionada a <strong>indicação da OMS</strong>:
+
+        - Com diferentes cores, e;
+        - Diferentes textos;
+        - Implementando o aprendizado proposto;
 
   2. Visando respeitar e manter o design do projeto original
-    
+
       Atualizei o <strong>FIGMA</strong> para melhor visualização da ideia;
 
      <details>
