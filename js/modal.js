@@ -8,6 +8,18 @@ const modalMessage = document.querySelector('.modal .title span')
 
 const modalBtnClose = document.querySelector('.modal button.close')
 
+// MODAL INFORM VARIABLES 
+
+const modalInform = document.querySelector('.modal.inform')
+
+const modalInformTitle = modalInform.querySelector('h3')
+
+const modalInformText = modalInform.querySelector('.text')
+
+console.log(modalInformTitle)
+
+console.log(modalInformText)
+
 */
 
 /* UTILIZANDO OOBJECT LITERAL PARA A MODAL */
@@ -42,5 +54,32 @@ function handleKeyDown(event) {
 
   if (isEscKey) {
     Modal.close()
+  }
+}
+
+/* UTILIZANDO OOBJECT LITERAL PARA A MODAL INFORM */
+
+export const ModalInform = {
+  itSelf: document.querySelector('.modal.inform'),
+  title: document.querySelector('.modal.inform h3'),
+  text: document.querySelector('.modal.inform .text'),
+
+  worry() {
+    ModalInform.itSelf.classList.add('worry')
+
+    ModalInform.itSelf.classList.remove('congrats')
+    ModalInform.itSelf.classList.remove('danger')
+  },
+  congrats() {
+    ModalInform.itSelf.classList.add('congrats')
+
+    ModalInform.itSelf.classList.remove('worry')
+    ModalInform.itSelf.classList.remove('danger')
+  },
+  danger() {
+    ModalInform.itSelf.classList.add('danger')
+
+    ModalInform.itSelf.classList.remove('worry')
+    ModalInform.itSelf.classList.remove('congrats')
   }
 }
