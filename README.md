@@ -41,7 +41,7 @@ Decidi acrescentar alguns detalhes a mais no projeto:
 
        <summary>Projeto funcionando</summary>
        <br/>
-       <a href="" target="_blank">Calcule seu IMC</a>
+       <a href="https://vmpilustra.github.io/Calculo_IMC/" target="_blank">Calcule seu IMC</a>
 
      </details>
  
