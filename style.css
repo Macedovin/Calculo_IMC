@@ -73,10 +73,12 @@ button {
 }
 
 form {
-  max-width: clamp(22.4rem, 25rem + 26vw, 30rem);
+  min-width: clamp(22.4rem, 16rem + 20vw, 30rem);
 }
 
 form h1 {
+  text-align: center;
+  
   margin-bottom: 3.2rem;
 }
 
@@ -297,6 +299,10 @@ form button:hover {
 @media (min-width: 768px) {
   .card {
     padding: 4.8rem 6.4rem 6.4rem;
+  }
+  
+    form h1 {
+    text-align: left;
   }
 
   /* modal/ pop-up */
